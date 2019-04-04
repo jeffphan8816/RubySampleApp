@@ -13,6 +13,8 @@ group :production do
   gem 'pg', '0.20.0'
 end
 
+gem 'minitest', group: :test
+gem 'minitest-reporters', group: :test
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
@@ -24,6 +26,7 @@ group :development do
   gem 'listen',                '3.1.5'
   gem 'spring',                '2.0.2'
   gem 'spring-watcher-listen', '2.0.1'
+  gem 'guard'
 end
 
 
